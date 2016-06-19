@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contos de Ifá: Exu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <!-- Preloader -->
+  <script src="js/jquery.queryloader2.js" type="text/javascript"></script>
+  <script src="js/vacuo.js" type="text/javascript"></script>
+
+    <!-- Fast Click -->
+  <!-- // <script src="js/fastclick.js" type="text/javascript"></script> -->
+
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <!-- Fast Click -->
+  <script>
+  // $(function() {
+  //     FastClick.attach(document.body);
+  // });
+  </script>
+  <!-- Facebook Like -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=511616418947615";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-chevron-circle-left fa-6x"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <div class="btn-group-vertical">
+            <a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <a id="menu-close" href="index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-file-text-o"></i></a>
+            <a id="menu-close" href="play.html" class="btn btn-lg pull-right toggle"><i class="fa fa-gamepad"></i></a>
+            <a id="menu-final" href="final.html" class="btn btn-lg pull-right toggle"><i class="fa fa-sign-in"></i></a>
+            <a id="menu-close" href="../../index.html" class="btn btn-lg pull-right toggle"><i class="fa fa-home"></i></a>
+           </div>
+        </ul>
+    </div>
+    <!-- /Side Menu -->
+
+<!-- Começo dos trabalhos -->
+  <!-- Okaran Meji Game -->
+  <div id="exu_game" data-0p="display:block;">
+  </div>
+  <div id="exu_stat" data-0p="display:block;">
+        <span id="hit">0 Dendês</span>
+        &nbsp;
+        <span id="timer"> </span>
+        <!-- <span id="miss">0 Ovos</span> -->
+        <!-- &nbsp; -->
+        <a id="btnstart" href="javascript://">Iniciar &#9658;</a>
+  </div>
+  <div id="exu_container" data-0p="display:block;">
+        <div id="char1" class="character ovo ovo1"></div>
+        <div id="char2" class="character ovo ovo2"></div>
+        <div id="char3" class="character dende dende1"></div>
+        <div id="char4" class="character dende dende2"></div>
+        <div id="char5" class="character dende dende3"></div>
+  </div>
+  <div id="exu_message">
+        Exu precisa coletar 16 cocos de dende, tente outra vez.
+  </div>
+  <div id="exu_dende">
+        Exu coletou os 16 cocos de dende...
+  </div>
+  <div id="exu_continuar">
+    <a href="final.html"> <h2 class="play"> Continuar </h2> </a>
+  </div>
+
+  <script>
+  $(document).ready(function() {   
+    function animateFinal() {
+      $('#menu-final').animate({'color':'#000'},3000).animate({'color':'#FFF'},1000, animateFinal); 
+    }
+
+    animateFinal();
+  }); 
+
+  </script>
+  <!-- Trilha -->
+  <div id="dsp_toada" class="audio"></div>
+
+ 
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.jplayer.min.js"></script>
+  <script src="js/okaranmeji.js"></script>
+   <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54288413-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>
