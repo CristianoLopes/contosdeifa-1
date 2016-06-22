@@ -105,6 +105,13 @@ body {
     background-position: 50% 105%;
 	z-index: 7;
 }*/
+
+/*Jogar*/
+.play{
+	font-size:3em;
+	color:#E2D800;
+}
+
 #intro_setas {
   background-image: url('../imgs/intro/scroll.png');
   background-repeat: no-repeat;
@@ -488,6 +495,7 @@ body {
 
 #intro h2 a {
   color: #fff;
+  font-size: 0.9em;
 }
 
 
@@ -733,6 +741,11 @@ body {
 	height: 100%;
 	z-index: 7;
 	-webkit-transform: scale(1) rotate(0deg);
+}
+
+#intro h2{
+
+
 }
 
 #final_okaranmeji {
@@ -1005,6 +1018,8 @@ body {
 	background-position: 0px 0px;
 	z-index: 5;
 }
+
+
 
 /* Side Menu */
 

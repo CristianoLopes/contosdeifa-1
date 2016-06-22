@@ -105,6 +105,14 @@ body {
     background-position: 50% 105%;
 	z-index: 7;
 }*/
+
+/*Jogar*/
+.play{
+	color: #45F200;
+    text-shadow: 8px 10px 15px #4a1800;
+
+}
+
 #intro_setas {
   background-image: url('../imgs/intro/scroll.png');
   background-repeat: no-repeat;
