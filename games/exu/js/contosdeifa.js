@@ -3,8 +3,8 @@ $( document ).ready(function() {
 	var s = skrollr.init({
         forceHeight: true,
          constants: {
-            exu: 500,
-            exus: 5000
+            exu: 100,
+            exus: 1000
         }
 
     });

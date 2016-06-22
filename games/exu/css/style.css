@@ -1,4 +1,5 @@
 /** Contos de Ifá****/
+/* 2*/
 html {
 	overflow-y: hidden;
 }
@@ -67,14 +68,15 @@ h2 {
 }
 
 h3 {
-	font-family: "Fishfingers", sans-serif;
+	font-family: 'Atma', cursive;
 	font-size: 2em;
 	
 }
 
 h4 {
-	font-family: "1550", sans-serif;
+	font-family:'Atma', cursive;
 	font-size: 1em;
+	padding-left:10%;
 	
 }
 
@@ -448,7 +450,9 @@ body {
 }
 
 #exu_meji h4 {
-	text-shadow: 2px 2px 23px #000000;
+	/*text-shadow: 2px 2px 23px #000000; */
+	color:#ff0000;
+
 }
 
 /*#exu_stage {
@@ -726,9 +730,9 @@ body {
     text-align: center;
     position: fixed;
     z-index: 25;
-    color: #7FD4D4;
+
     padding-left: 0px;
-    text-shadow: 2px 2px 23px #000;
+    text-shadow: 2px 2px 23px #83D8D8;
 }
 
 #exu_vermelho1 {
