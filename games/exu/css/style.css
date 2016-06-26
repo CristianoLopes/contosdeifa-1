@@ -1,5 +1,4 @@
 /** Contos de Ifá****/
-/* 2*/
 html {
 	overflow-y: hidden;
 }
@@ -450,7 +449,7 @@ body {
 }
 
 #exu_meji h4 {
-	/*text-shadow: 2px 2px 23px #000000; */
+	text-shadow: 2px 2px 23px #FFF;
 	color:#ff0000;
 
 }
@@ -594,7 +593,7 @@ body {
 
 #exu_questiona {
 	font-size: 3.5em;
-	width: 100%;
+	width: 200%;
 	margin: 0 auto;
 	top: 8%;
 	right: -100%;
@@ -711,7 +710,7 @@ body {
 
 #exu_encontra_yemanja {
 	font-size: 3.5em;
-	width: 100%;
+	width: 200%;
 	margin: 0 auto;
 	top: 8%;
 	right: -100%;
@@ -730,7 +729,7 @@ body {
     text-align: center;
     position: fixed;
     z-index: 25;
-
+    padding-right:12%;
     padding-left: 0px;
     text-shadow: 2px 2px 23px #83D8D8;
 }
@@ -863,6 +862,7 @@ body {
     position: fixed;
     z-index: 27;
     padding-left: 0px;
+    color:#ff0000 !important;
     text-shadow: 2px 2px 23px #000;
 }
 
@@ -881,7 +881,7 @@ body {
 
 #orunga_conselho {
 	font-size: 3.5em;
-	width: auto;
+	width: 100%;
 	margin: 0 auto;
 	top: 8%;
 	right: -100%;

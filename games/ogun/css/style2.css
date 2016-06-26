@@ -179,6 +179,10 @@ body {
 	text-shadow: 2px 2px 23px #000000;
 }
 
+#chamada_macaco h4{
+	font-family: 'Atma', cursive;
+}
+
 #fala_macaco {
 	font-size: 2.5em;
 	width: 50%;
