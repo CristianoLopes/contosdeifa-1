@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contos de Ifá: Odé </title>
+  
+  <!-- abertura -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap styles -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style2.css" rel="stylesheet">
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/jquery-ui.css">
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <!-- Preloader -->
+   <script src="../js/jquery.queryloader2.js" type="text/javascript"></script>
+   <script src="../js/vacuo3.js" type="text/javascript"></script>
+   <!-- final abertura -->
+
+  <!-- // <script src="jquery-1.7.2.min.js"></script> -->
+  <!-- <script src="PointerLock.js"></script> --> <!-- Insufficient browser support, interferes with other mouse events -->
+  <!-- <script src="Pathfinder.js"></script> -->
+  <script src="Three.js"></script>
+  <!-- <script src="ColladaLoader.js"></script> -->
+  <script src="Three.FirstPersonControls.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-chevron-circle-left fa-6x"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <div class="btn-group-vertical">
+           <!-- <a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>-->
+            <a id="menu-close" href="index.html" class="btn btn-lg pull-right toggle" title="Inicio"><i class="iconcoco-iniciar"></i></a>
+            <a id="menu-close" href="play.html" class="btn btn-lg pull-right toggle" title="Jogar"><i class="iconbuzio"></i></a>
+            <a id="menu-close" href="final.html" class="btn btn-lg pull-right toggle" title="Final" ><i class="iconfechar-xango"></i></a>
+            <a id="menu-close" href="../../index.html" class="btn btn-lg pull-right toggle" title="Home"><i class="iconexu-ico"></i></a>
+           </div>
+        </ul>
+    </div>
+    <!-- /Side Menu -->
+  <div id="intro">
+    <h2> Acerte o pássaro </h2>
+    <h3> Use o mouse e as setas para se movimentar. </h3>
+    <h3> 
+  </div>
+  <div id="continuar"> <h2> <a href="../final.html"> Continue... </a> </h2> </div>
+  <script>
+    $( document ).ready(function() {
+      $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+        $("#menu-toggle").fadeIn();
+      });
+
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+          $(this).fadeOut();
+      });
+    
+    });
+    
+  </script>
+
+  <!-- Trilha -->
+  <div id="dsp_toada" class="audio"></div>
+  <div id="dsp_floresta" class="audio"></div>
+
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.jplayer.min.js"></script>
+  <script>
+  $("#dsp_floresta").jPlayer({
+      ready: function(event) {
+          $(this).jPlayer("setMedia", {
+              mp3: "../audio/floresta_ode.mp3"
+          }).jPlayer("play");
+      },
+      ended: function() { // The $.jPlayer.event.ended event
+        $(this).jPlayer("play");
+      },
+      swfPath: "/js",
+      supplied: "mp3, oga"
+  });
+  </script>
+
+</body>
+</html>

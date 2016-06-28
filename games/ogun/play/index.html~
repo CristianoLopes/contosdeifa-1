@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A simple HTML5 Template">
+<meta name="author" content="dron">
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/fontello-contosifa/css/contosifa.css" rel="stylesheet">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="images/index.css">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <!-- Preloader -->
+   <script src="../js/jquery.queryloader2.js" type="text/javascript"></script>
+   <script src="../js/vacuo2.js" type="text/javascript"></script>
+<title>Contos de Ifá: Ogun</title>
+<!--[if lt IE 9]><script>document.createElement("canvas");</script><![endif]-->
+</head>
+<body>
+	<!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-chevron-circle-left fa-6x"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <div class="btn-group-vertical">
+            <!--<a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>-->
+            <a id="menu-close" href="index.html" class="btn btn-lg pull-right toggle" title="Inicio"><i class="iconcoco-iniciar"></i></a>
+            <a id="menu-close" href="play.html" class="btn btn-lg pull-right toggle" title="Jogar"><i class="iconbuzio"></i></a>
+            <a id="menu-close" href="final.html" class="btn btn-lg pull-right toggle" title="Final" ><i class="iconfechar-xango"></i></a>
+            <a id="menu-close" href="../../index.html" class="btn btn-lg pull-right toggle" title="Home"><i class="iconexu-ico"></i></a>
+           </div>
+        </ul>
+    </div>
+    <!-- /Side Menu -->
+    <div id="gameplay">
+      <canvas id="view" width="640" height="480"></canvas>
+    </div>
+<div id="extra"></div>
+
+<div id="desc">
+	<div id="browser"></div>
+</div>
+    <!-- <div id="continuar">
+      <h2> <a href="../final.html"> Continuar </a></h2>
+    </div> -->
+<script src="scripts/all.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+	 $("#menu-close").click(function(e) {
+	        e.preventDefault();
+	        $("#sidebar-wrapper").toggleClass("active");
+	        $("#menu-toggle").fadeIn();
+	 });
+
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+        $(this).fadeOut();
+    });
+</script>
+<script>
+  $(document).ready(function() {   
+    function animateFinal() {
+      $('#menu-final').animate({'color':'#000'},2000).animate({'color':'#FFF'},1000, animateFinal); 
+    }
+
+    animateFinal();
+  }); 
+
+  </script>
+
+</body>
+</html>
