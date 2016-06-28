@@ -1110,7 +1110,7 @@ body {
 }
 
 .btn-lg {
-    font-size: 2.3em;
+    font-size: 4em;
     color: #FFF;
 }
 
@@ -1140,11 +1140,12 @@ body {
 
 .sidebar-nav {
   position: absolute;
-  top: 0;
+  top: 6%;
   width: 60px;
   list-style: none;
-  margin: 0;
+  margin: -36%;
   padding: 0;
+  padding-left: -12%;
 }
 
 .sidebar-nav li {
