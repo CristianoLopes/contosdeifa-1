@@ -73,7 +73,7 @@ body {
 	font-family: "1550", sans-serif;
 	color: #FFF;
 	background-size: cover;
-	background-color: #790000;
+	background-color: #b1ffac;
 }
 
 .audio {
@@ -108,8 +108,9 @@ body {
 
 /*Jogar*/
 .play{
-	font-size:3em;
-	color:#E2D800;
+	color: #45F200;
+    text-shadow: 8px 10px 15px #4a1800;
+
 }
 
 #intro_setas {
@@ -126,16 +127,42 @@ body {
 }
 
 #intro_mata {
-	background-image: url('../imgs/ibejis/3.jpg');
+	background-image: url('../imgs/ossain/bg_intro2.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 0% 0%;
+	background-position: 0% 28%;
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: 0px;
+	left: 0px;
 	width: 100%;
 	height: 100%;
 	z-index: 1;
+	background-size: cover;
+}
+
+#florestaseca {
+	background-image: url('../imgs/ossain/cenarioseco.png');
+	background-repeat: no-repeat;
+	background-position: 0% 28%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-size: cover;
+}
+
+#pedreira {
+	background-image: url('../imgs/ossain/pedreira.png');
+	background-repeat: no-repeat;
+	background-position: 0% 28%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-size: cover;
 }
 
 #planta01 {
@@ -216,7 +243,7 @@ body {
 }
 
 #arvore {
-	background-image: url('../imgs/ibejis/Arvore.png');
+	background-image: url('../imgs/ossain/pombatratada.png');
 	background-repeat: no-repeat;
 	background-position: 0% 60%;
 	background-size: 40%;
@@ -397,10 +424,34 @@ body {
 }
 
 #passaro {
-	background-image: url('../imgs/ode/passaro.png');
+	background-image: url('../imgs/ossain/pombatratada.png');
 	background-repeat: no-repeat;
-	background-position: 100% 60%;
-	background-size: 14%;
+	background-position: 170% 100%;
+	background-size: 40% 40%;
+	position: fixed;
+	z-index: 3;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#passarovoltando {
+	background-image: url('../imgs/ossain/pombatratada2.png');
+	background-repeat: no-repeat;
+	background-position: 170% 100%;
+	background-size: 40%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#cesta {
+	background-image: url('../imgs/ossain/cestocomfolhas.png');
+	background-repeat: no-repeat;
+	background-position: 170% 100%;
+	background-size: 29% 29%;
 	position: fixed;
 	z-index: 1;
 	/*top:0%;
@@ -409,11 +460,152 @@ body {
 	height: 100%;
 }
 
-#ode_abertura {
+#cestaseca {
+	background-image: url('../imgs/ossain/cesta.png');
+	background-repeat: no-repeat;
+	background-position: 25% 100%;
+	background-size: 29% 29%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#ceuescuro {
+	background-color: #FFA303;
+	position: fixed;
+	z-index: 0;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#cabaca {
+	background-image: url('../imgs/ossain/cabaça.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 16%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#espada {
+	background-image: url('../imgs/ossain/espada2.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 15%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#eruxim {
+	background-image: url('../imgs/ossain/eruxim.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 26%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#furacao {
+	background-image: url('../imgs/ossain/furacão.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 80%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#machado {
+	background-image: url('../imgs/ossain/adamaxeri.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 30%;
+	position: fixed;
+	z-index: 1;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#sol {
+	background-image: url('../imgs/ossain/sol.png');
+	background-repeat: no-repeat;
+	background-position: -20% 100%;
+	background-size: 20%;
+	position: fixed;
+	z-index: 0;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+#ossain_abertura {
+	font-size: 3.5em;
+	width: 300%;
+	margin: 0 auto;
+	top: 8%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
+#ossain_abertura2 {
 	font-size: 3.5em;
 	width: 200%;
 	margin: 0 auto;
 	top: 8%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
+#ossain_xango {
+	font-size: 3.5em;
+	width: 200%;
+	margin: 0 auto;
+	top: 55%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
+#ossain_fala {
+	font-size: 3.5em;
+	width: 200%;
+	margin: 0 auto;
+	top: 55%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #000000;
+}
+#ossain_fala2 {
+	font-size: 3.5em;
+	width: 300%;
+	margin: 0 auto;
+	top: 55%;
 	right: -100%;
 	text-align: center;
 	position: fixed;
@@ -487,7 +679,8 @@ body {
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	text-shadow: 3px 6px 3px #04B5C3;
+	top: -10%;
+	text-shadow: 3px 6px 3px #C30404;
 }
 #intro h2, h3 {
   opacity:1;
@@ -495,7 +688,6 @@ body {
 
 #intro h2 a {
   color: #fff;
-  font-size: 0.9em;
 }
 
 
@@ -513,13 +705,13 @@ body {
 	text-shadow: 2px 2px 5px #003003;
 }
 
-#pano_ibejis {
+#pano_ossain {
 	width: 100%;
 	height: 100%;
 	position: fixed;
 	top: -100%;
 	left: 0px;
-	background-image: url('../imgs/bg/bg_ibejis.png');
+	background-image: url('../imgs/bg/bg_ossain.png');
 	background-repeat: repeat;
 	background-position: 0px 0px;
 	z-index: 2;
@@ -576,7 +768,7 @@ body {
 	height: 100%;
 }
 #buzios2 {
-	background-image: url('../imgs/ifa/buzios/aberto2.png');
+	background-image: url('../imgs/ifa/buzios/aberto3.png');
 	background-repeat: no-repeat;
 	background-position: 84% 87%;
 	background-size: auto auto;
@@ -587,7 +779,7 @@ body {
 	width: 100%;
 	height: 100%;
 }
-#ibeji_txt {
+#ossain_txt {
 	font-size: 2.5em;
 	width: 75%;
 	margin: 0px auto;
@@ -597,16 +789,16 @@ body {
 	z-index: 22;
 	padding-left: 20px;
 }
-#ibeji_txt h2 {
-	text-shadow: 8px 10px 15px rgba(185, 0, 0, 1); 
+#ossain_txt h2 {
+	text-shadow: 8px 10px 15px #005304; 
 	margin-top: 0.5em;
 }
 
-#ibeji_txt h3 {
-	text-shadow: 2px 2px 23px rgba(185, 0, 0, 1);
+#ossain_txt h3 {
+	text-shadow: 2px 2px 23px #005304;
 }
 
-#ibeji_meji {
+#ossain_meji {
 	font-size: 3em;
 	width: 50%;
 	margin: 0 auto;
@@ -617,16 +809,14 @@ body {
 	padding-left: 20px;
 }
 
-#ibeji_meji h4 {
+#ossain_meji h4 {
 	text-shadow: 2px 2px 23px #000000;
-	color: rgb(17, 214, 76);
 }
 
 
 #ode_familia {
 	background-image: url('../imgs/ode/familia.png');
 	background-repeat: no-repeat;
-
 	background-position: 0% 0%;
 	background-size: 10%;
 	position: fixed;
@@ -742,11 +932,6 @@ body {
 	height: 100%;
 	z-index: 7;
 	-webkit-transform: scale(1) rotate(0deg);
-}
-
-#intro h2{
-
-
 }
 
 #final_okaranmeji {
@@ -877,25 +1062,14 @@ body {
 	height: 100%;
 }
 
-#cabaca {
-	background-image: url('../imgs/ogum/cabaca.png');
-	background-repeat: no-repeat;
-	background-position: 0% 0%;
-	background-size: 10%;
-	position: fixed;
-	z-index: 2;
-	top:0%;
-	left: 0%;
-	width: 100%;
-	height: 100%;
-}
+
 
 
 #peixe {
 	background-image: url('../imgs/ogum/peixe_principal.png');
 	background-repeat: no-repeat;
 	background-position: 0% 0%;
-	background-size: 22%;
+	background-size: 16%;
 	position: fixed;
 	z-index: 2;
 	top:0%;
@@ -1020,8 +1194,6 @@ body {
 	z-index: 5;
 }
 
-
-
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -1047,7 +1219,7 @@ body {
 
 .sidebar-nav {
   position: absolute;
-  top: 6%;
+  top: -6%;
   width: 60px;
   list-style: none;
   margin: -36%;

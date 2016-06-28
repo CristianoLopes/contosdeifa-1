@@ -40,7 +40,7 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <div class="btn-group-vertical">
-            <!--<a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>-->
+            <a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <a id="menu-close" href="index.html" class="btn btn-lg pull-right toggle" title="Inicio"><i class="iconcoco-iniciar"></i></a>
             <a id="menu-close" href="play.html" class="btn btn-lg pull-right toggle" title="Jogar"><i class="iconbuzio"></i></a>
             <a id="menu-close" href="final.html" class="btn btn-lg pull-right toggle" title="Final" ><i class="iconfechar-xango"></i></a>

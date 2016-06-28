@@ -9,7 +9,6 @@
   <!-- Bootstrap styles -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/fontello-contosifa/css/contosifa.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery-ui.css">
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

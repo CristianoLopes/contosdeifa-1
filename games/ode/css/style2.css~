@@ -210,6 +210,6 @@ h4 {
 }
 
 .btn-lg {
-    font-size: 4em;
+    font-size: 2.3em;
     color: #FFF;
 }
