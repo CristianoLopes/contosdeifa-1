@@ -168,8 +168,8 @@ body {
 	position: fixed;
 	z-index: 2;
 	padding-left: 20px;
-	text-shadow: 2px 2px 23px #F51111;
-	color: #000;
+	/*text-shadow: 2px 2px 23px #F51111;*/
+	color: #ff0000;
 }
 #chamada_macaco h4 {
 	font-family:'Atima' cursive;
@@ -186,7 +186,7 @@ body {
     z-index: 2;
     color: #F00;
     padding-left: 0px;
-    text-shadow: 2px 2px 23px #F51111;
+   /* text-shadow: 2px 2px 23px #F51111;*/
 }
 
 #saida_exu {
@@ -199,7 +199,7 @@ body {
 	position: fixed;
 	z-index: 2;
 	padding-left: 20px;
-	text-shadow: 2px 2px 23px #000;
+	/*text-shadow: 2px 2px 23px #000;*/
 	color: #F51111;
 }
 
@@ -213,8 +213,8 @@ body {
 	position: fixed;
 	z-index: 2;
 	padding-left: 20px;
-	text-shadow: 2px 2px 23px #F51111;
-	color: #000;
+	/*text-shadow: 2px 2px 23px #F51111;*/
+	color: #ff0000;
 }
 
 #recado_orixas {
@@ -228,7 +228,7 @@ body {
 	z-index: 100;
 	color: #F00;
 	padding-left: 0px;
-	text-shadow: 2px 2px 23px #F51111;
+	text-shadow: 2px 2px 23px #FFF;
 }
 #ifa {
 	position: fixed;

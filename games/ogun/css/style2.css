@@ -57,13 +57,13 @@ h2 {
 }
 
 h3 {
-	font-family: "Fishfingers", sans-serif;
+	font-family: 'Atma', cursive;
 	font-size: 2em;
 	
 }
 
 h4 {
-	font-family: "1550", sans-serif;
+	font-family: 'Atma', cursive;
 	font-size: 1em;
 	
 }
@@ -73,7 +73,7 @@ body {
 	font-family: "1550", sans-serif;
 	color: #FFF;
 	background-size: cover;
-	background-color: #2000b9;
+	background-color: #00008b;
 }
 
 .audio {
@@ -379,7 +379,8 @@ body {
 }
 
 #ogum_meji h4 {
-	text-shadow: 2px 2px 23px #000000;
+	text-shadow: 2px 2px 23px #FFF;
+	color:#050559;
 }
 
 #ogun_game {
@@ -404,14 +405,14 @@ body {
 	right: 0%;
 	text-align: center;
 	position: fixed;
-	color: #CF0000;
+	color: #00008b;
 	padding-left: 0px;
 	text-shadow: 2px 2px 23px #000000;
 	display: none;
 	z-index: 28;
 }
 #exu_play a {
-	color: #CF0000;
+	color: #00008b;
 	text-decoration: none;
 }
 
