@@ -691,7 +691,7 @@ body {
 }
 
 
-#ode_falafinal {
+#ossain_falafinal {
 	font-size: 3.5em;
 	width: 80%;
 	margin: 0 auto;
@@ -699,13 +699,29 @@ body {
 	right: 10%;
 	text-align: center;
 	position: fixed;
-	z-index: 21;
+	z-index: 2001;
 	color: rgba(15, 249, 0, 1);
 	padding-left: 0px;
 	text-shadow: 2px 2px 5px #003003;
 }
 
+#ossain_falafinal h4 {
+color:white;
+}
+
 #pano_ossain {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: -100%;
+	left: 0px;
+	background-image: url('../imgs/bg/bg_ossain.png');
+	background-repeat: repeat;
+	background-position: 0px 0px;
+	z-index: 2;
+}
+
+#pano_final{
 	width: 100%;
 	height: 100%;
 	position: fixed;
