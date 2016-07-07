@@ -1,59 +1,18 @@
-/* Add some margin to the page and set a default font and colour */
- 
-body {
-  margin: 30px;
-  font-family: "Georgia", serif;
-  line-height: 1.8em;
-  color: #333;
+body{
+  overflow: hidden;
 }
- 
-/* Give headings their own font */
- 
-h1, h2, h3, h4 {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
- 
+
 /* Main content area */
  
 #content {
-  margin: 80px 70px;
   text-align: center;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  width: 100%;
+  height: 100%;
 }
  
-/* Header/footer boxes */
- 
-.wideBox {
-  clear: both;
-  text-align: center;
-  margin: 70px;
-  padding: 10px;
-  background: #ebedf2;
-  border: 1px solid #333;
-}
- 
-.wideBox h1 {
-  font-weight: bold;
-  margin: 20px;
-  color: #666;
-  font-size: 1.5em;
-}
- 
-/* Slots for final card positions */
- 
-#cardSlots {
-  margin: 50px auto 0 auto;
-  background: #ddf;
-}
-
-/* Slots for final card positions */
- 
-#cardDescription {
-  margin: 50px auto 0 auto;
-  background: #dfd;
-}
  
 /* The initial pile of unsorted cards */
  
@@ -62,7 +21,7 @@ h1, h2, h3, h4 {
   background: #ffd;
 }
  
-#cardSlots, #cardPile, #cardDescription {
+#cardPile {
   width: 910px;
   height: 120px;
   padding: 20px;
@@ -77,7 +36,7 @@ h1, h2, h3, h4 {
  
 /* Individual cards and slots */
  
-#cardSlots div, #cardPile div {
+#cardPile div {
   float: left;
   width: 58px;
   height: 78px;
@@ -91,17 +50,17 @@ h1, h2, h3, h4 {
   margin: 0 0 0 10px;
   /*background: #fff;*/
 }
+
+.cardSlot {
+  width: 58px;
+  height: 78px;
+  padding: 10px;
+  padding-top: 40px;
+  padding-bottom: 0;
+}
  
-#cardSlots div:first-child, #cardPile div:first-child {
+#cardPile div:first-child {
   margin-left: 0;
-}
- 
-#cardSlots div.hovered {
-  background: #aaa;
-}
- 
-#cardSlots div {
-  /*border-style: dashed;*/
 }
 
 #cardPile div {
@@ -110,92 +69,133 @@ h1, h2, h3, h4 {
   font-size: 50px;
   text-shadow: 0 0 3px #000;
 }
- 
-#cardPile div.ui-draggable-dragging {
-  /*-moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);*/
-}
+
+    #cardSlot1 {
+     width: 58px;
+     height: 78px;
+     position: absolute;
+     top: 50%;
+	 left: -10%;
+    }
+
+    #cardSlot2 {
+     width: 58px;
+     height: 78px;
+     position: absolute;
+     top: 50%;
+	 left: -10%;
+    }
+
+    #cardSlot3 {
+     width: 58px;
+     height: 78px;
+     position: absolute;
+     top: 50%;
+	 left: -10%;
+    }
+
+    #cardSlot6 {
+     width: 58px;
+     height: 78px;
+     position: absolute;
+     top: 50%;
+     left: -10%;
+    }
 
     #cardSlot1.ui-droppable-disabled {
-      background: none !important;
+        background: url(../images/folha1c.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;	  
     }
     #cardSlot2.ui-droppable-disabled {
-      background: none !important;
+        background: url(../images/folha2c.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;	  
     }
     #cardSlot3.ui-droppable-disabled {
-      background: none !important;
+        background: url(../images/folha3c.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;	  
     }
     #cardSlot4.ui-droppable-disabled {
-      background: none !important;
+        background: url(../images/folha4c.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;	  
     }
     #cardSlot5.ui-droppable-disabled {
-      background: none !important;
+        background: url(../images/folha5c.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;	  
     }
     #cardSlot6.ui-droppable-disabled {
-      background: none !important;
+        background: url(../images/folha6c.png) !important;
+	    background-size: contain !important;
+        background-repeat: no-repeat !important;
     }
     #cardSlot7.ui-droppable-disabled {
-      background: none !important;
+        background: url(../images/folha17.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;	  
     }
     #cardSlot8.ui-droppable-disabled {
-      background: none !important;
+        background: url(../images/folha18.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;	  
     }
     #cardSlot9.ui-droppable-disabled {
-      background: none !important;
+        background: url(../images/folha9c.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;	  
     }
     #cardSlot10.ui-droppable-disabled {
-      background: none !important;
+        background: url(../images/folha10c.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;	  
     }
     /* Individually coloured cards*/ 
      
     #card1.correct {
-        background: url(../images/folha1.png) !important;
-        background-size: 78% 118% !important;
-        background-repeat: no-repeat !important;
+        background: none !important;
     }
     #card2.correct {
-        background: url(../images/folha2.png) !important;
-        background-size: 78% 118% !important;
-        background-repeat: no-repeat !important;
+        background: none !important;
     }
     #card3.correct {
-        background: url(../images/folha3.png) !important;
-        background-size: 78% 118% !important;
-        background-repeat: no-repeat !important;
+        background: none !important;
     }
     #card4.correct {
-        background: url(../images/folha4.png) !important;
-        background-size: 78% 118% !important;
-        background-repeat: no-repeat !important;
+        background: none !important;
     }
     #card5.correct {
-        background: url(../images/folha5.png) !important;
-        background-size: 78% 118% !important;
-        background-repeat: no-repeat !important;
+        background: none !important;
     }
     #card6.correct {
-        background: url(../images/folha6.png) !important;
-        background-size: 78% 118% !important;
-        background-repeat: no-repeat !important;
+        background: none !important;
     }
     #card7.correct {
-        background: url(../images/folha7.png) !important;
-        background-size: 78% 118% !important;
-        background-repeat: no-repeat !important;
+        background: none !important;
     }
     #card8.correct {
-        background: url(../images/folha8.png) !important;
-        background-size: 78% 118% !important;
-        background-repeat: no-repeat !important;
+        background: none !important;
     }
     #card9.correct {
-        background: url(../images/folha9.png) !important;
-        background-size: 78% 118% !important;
-        background-repeat: no-repeat !important;
+        background: none !important;
     }
     #card10.correct {
-        background: url(../images/folha10.png) !important;
-        background-size: 78% 118% !important;
-        background-repeat: no-repeat !important;
+        background: none !important;
     }
+
+/* Progress bar */
+
+#progressbar {
+  background-color: #000000;
+  padding: 4px;
+  position:absolute;
+  bottom:8px; 
+  width:96%;
+}
+
+#progress {
+  background-color: #00FF00;
+  height: 16px;
+}
