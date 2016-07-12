@@ -361,6 +361,7 @@ i.scroll:hover {
   bottom: 0px;
   background-position: 50% 22%;
   z-index: 9999;
+  top: 85%;
 }
 
 .fb-like-box {
