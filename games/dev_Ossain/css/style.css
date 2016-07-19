@@ -1193,9 +1193,21 @@ color:white;
 
 #game {
 	position: fixed;
-	top: 14%;
-	left: 25%;
+	top: 10%;
+	left: 33%;
 	z-index: 4;
+}
+#box {
+top: 11%;
+border: 1px;
+border-color: #000;
+background-color: #6CB616;
+width: 31%;
+float: left;
+height: 63.5%;
+left: 1%;
+position: fixed;
+opacity: 0.65;
 }
 
 #ogum_social {

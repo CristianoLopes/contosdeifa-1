@@ -1,7 +1,7 @@
 function ScoreBoardGameControl (){
 	var score = 0;
 	var POINT_GAME = 10;
-	var TEXT_SCORE = "Pontos : "
+	var TEXT_SCORE = "Axe: "
 
 	var TOTAL_CORRECT = 10;
 	var corrects = 0;
@@ -15,7 +15,7 @@ function ScoreBoardGameControl (){
 		corrects++;
 		score+= POINT_GAME;
 		if (corrects ==  TOTAL_CORRECT){
-			alert("Fim de Jogo! Seu Score foi " + score);
+			alert("Fim de Jogo! Seu Axe ficou: " + score);
 		}
 	}
 
@@ -73,6 +73,7 @@ function ControllerLogicGame(){
 						firstSelected.block = true;
 						secondSelected.block = true;
 						eventController["correct"](); 
+						
 					}else{
 						firstSelected.visible  = false;
 						secondSelected.visible  = false;
@@ -128,7 +129,7 @@ function CardGame (cards , controllerLogicGame,scoreBoard){
 							scoreBoardGameControl.updateScore();
 						});
 						logicGame.addEventListener("wrong",function (){
-							scoreBoardGameControl.decrementScore();
+							//scoreBoardGameControl.decrementScore();
 							scoreBoardGameControl.updateScore();
 						});
 
@@ -150,16 +151,17 @@ function CardGame (cards , controllerLogicGame,scoreBoard){
 }
 
 function BuilderCardGame(){
-	var pictures = new Array ('10.png','10.png',
-		'1.png','1.png',
-		'2.png','2.png',
-		'3.png','3.png',
-		'4.png','4.png',
-		'5.png','5.png',
-		'6.png','6.png',
-		'7.png','7.png',
-		'8.png','8.png',
-		'9.png','9.png');
+	var pictures = new Array ('alecrim.png','alecrim.png',
+		'aroeira.png','aroeira.png',
+		'babosa.png','babosa.png',
+		'boldo.png','boldo.png',
+		'camomila.png','camomila.png',
+		'ervadoce.png','ervadoce.png',
+		'goiabeira.png', 'goiabeira.png',
+		'manjericao.png','manjericao.png',
+		'quebrapedra.png','quebrapedra.png',
+		'romeira.png','romeira.png');
+
 
 	this.doCardGame =  function (){
 		shufflePictures();

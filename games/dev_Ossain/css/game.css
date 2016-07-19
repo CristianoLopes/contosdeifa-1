@@ -14,8 +14,8 @@ img {
 }
 
 #score{
-	margin : 0 0 0 500px;
-	font-size: 25px;
+	margin: 0 0 0 58%;
+    font-size: 30px;
 }
 
 
@@ -29,9 +29,11 @@ img {
     font-family: arial;
     font-size: 15px;
     font-weight: bold;
-    padding: 6px 24px;
+    padding: 6px 23px;
     text-decoration: none;
     text-shadow: 1px 1px 0 #FFFFFF;
+    margin-left: 12%;
+    margin-top: 26px;
 }
 .button_game:hover {
     background: -moz-linear-gradient(center top , #DFDFDF 5%, #EDEDED 100%) repeat scroll 0 0 #DFDFDF;
