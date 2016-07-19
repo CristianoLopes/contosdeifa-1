@@ -478,7 +478,7 @@ body {
 }
 
 #intro {
-	color: #FFF;
+	color: #E2D800;
 	cursor: pointer;
 	font-size: 32px;
 	opacity: 1;
@@ -761,7 +761,7 @@ body {
 #intro h3{
 font-family: "No_Color", sans-serif;
 font-size:1.6em;
-text-shadow: 3px 6px 3px #44585A;
+text-shadow: 3px 6px 3px #04B5C3;
 color:#E2D800;
 }
 

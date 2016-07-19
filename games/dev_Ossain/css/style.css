@@ -108,8 +108,8 @@ body {
 
 /*Jogar*/
 .play{
-	color: #45F200;
-    text-shadow: 8px 10px 15px #4a1800;
+	color: #fff8a8;
+    text-shadow: 8px 10px 15px #b78105;
 
 }
 
@@ -669,7 +669,7 @@ body {
 }
 
 #intro {
-	color: #45F200;
+	color: #fff8a8;
 	cursor: pointer;
 	font-size: 32px;
 	opacity: 1;
@@ -680,14 +680,14 @@ body {
 	height: 100%;
 	position: fixed;
 	top: -10%;
-	text-shadow: 3px 6px 3px #C30404;
+	text-shadow: 3px 6px 3px #b78105;
 }
 #intro h2, h3 {
   opacity:1;
 }
 
 #intro h2 a {
-  color: #45F200;
+  color: #fff8a8;
 }
 
 
@@ -701,6 +701,20 @@ body {
 	position: fixed;
 	z-index: 2001;
 	color: rgba(15, 249, 0, 1);
+	padding-left: 0px;
+	text-shadow: 2px 2px 5px #003003;
+}
+
+#ossain_falafinal2 {
+	font-size: 3.5em;
+	width: 80%;
+	margin: 0 auto;
+	top: 100%;
+	right: 10%;
+	text-align: center;
+	position: fixed;
+	z-index: 2001;
+	color: #fff;
 	padding-left: 0px;
 	text-shadow: 2px 2px 5px #003003;
 }
