@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('body').queryLoader2({
-        barColor: "#6e6d73",
-        backgroundColor: "#000",
+        barColor: "#6fd556",
+        backgroundColor: "##790000",
         percentage: true,
         barHeight: 1,
         completeAnimation: "grow",

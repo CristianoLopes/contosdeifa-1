@@ -1,4 +1,4 @@
-/** Contos de Ifá****/
+ffal/** Contos de Ifá****/
 html {
 	overflow-y: hidden;
 }
@@ -384,6 +384,45 @@ body {
 	height: 100%;
 }
 
+#baba {
+	background-image: url('../imgs/ibejis/b3.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 17%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#filhos {
+	background-image: url('../imgs/ibejis/f.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 17%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
+#esposa {
+	background-image: url('../imgs/ibejis/a.png');
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 17%;
+	position: fixed;
+	z-index: 2;
+	/*top:0%;
+	left: 7%;*/
+	width: 100%;
+	height: 100%;
+}
+
 #ogun {
 	background-image: url('../imgs/ode/ogun.png');
 	background-repeat: no-repeat;
@@ -422,6 +461,21 @@ body {
 	padding-left: 20px;
 	text-shadow: 2px 2px 23px #000000;
 }
+
+
+#ode_falafinal2 {
+	font-size: 3.5em;
+	width: 200%;
+	margin: 0 auto;
+	top: 8%;
+	right: -100%;
+	text-align: center;
+	position: fixed;
+	z-index: 21;
+	padding-left: 20px;
+	text-shadow: 2px 2px 23px #FF8B8B;
+}
+
 
 #ode_missao {
 	font-size: 3.5em;
@@ -510,10 +564,12 @@ body {
 	text-align: center;
 	position: fixed;
 	z-index: 2001;
-	color: rgba(15, 249, 0, 1);
+	color: #fff;
 	padding-left: 0px;
 	text-shadow: 2px 2px 5px #003003;
 }
+
+
 
 #pano_ibejis {
 	width: 100%;

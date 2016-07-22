@@ -109,7 +109,7 @@ function checkIfDead() {
 
 
 function checkIfWin() {
-	if(score > 920)
+	if(score > 400)
 	{
 		healthBarList.length = 1
 		game.state = game.STATE_DEAD_SCREEN;

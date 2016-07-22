@@ -7,11 +7,12 @@ html
 
 body {
 	background: #A0EEF2;
+	background-image: url('../../imgs/bg/bg_ibejis.png');
 }
 
 #game {
 	display: block;
-	margin: -5px auto 0px;
+	margin: 50px auto 0px;
 }
 
 #homingmissile {
@@ -31,14 +32,15 @@ body {
 
 #score {
 position: absolute;
-margin: 737px 455px 0px;
-top: 10px;
-left: 10px;
+/*margin: 737px 455px 0px;*/
+top: 53px;
+left: 1043px;
 font-size: 220%;
 font-family: ;
 font-style: italic;
 font-weight: bold;
 color: #FFF;
+margin-left:-1%;
 }
 
 #warning {
@@ -49,6 +51,8 @@ color: #FFF;
 }
 .menuScreen {
 	background: #eee url(../images/MenuScreen1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 .menuScreen2 {
 	background: #eee url(../images/MenuScreen2.png);
@@ -56,14 +60,20 @@ color: #FFF;
 
 .helpScreen {
 	background: #eee url(../images/HelpScreen.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .deadScreen {
 	background: #eee url(../images/DeadScreen.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .winScreen {
 	background: #eee url(../images/WinScreen.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .playGame1 {
