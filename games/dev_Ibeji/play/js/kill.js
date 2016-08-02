@@ -1040,7 +1040,7 @@ function continueGame(e) {
 			if(game.state == game.STATE_DEAD_SCREEN)
 			{			
 				//alert("Continue Buttton!!");
-				 window.open('///home/taoleshi/Documentos/contosdeifa/games/dev_Ibeji/final.html', '_blank');
+				window.open('../final.html', '_parent');
 			}		
 		}
 	}
