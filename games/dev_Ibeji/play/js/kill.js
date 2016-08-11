@@ -1040,7 +1040,14 @@ function continueGame(e) {
 			if(game.state == game.STATE_DEAD_SCREEN)
 			{			
 				//alert("Continue Buttton!!");
+<<<<<<< HEAD
 				 window.open('../final.html', '_parent');
+=======
+ 
+				 window.open('../final.html', '_parent');
+
+
+>>>>>>> ca8f6528f5504a32695a15e2cd59add137fa94de
 			}		
 		}
 	}

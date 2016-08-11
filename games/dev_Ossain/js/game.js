@@ -51,7 +51,7 @@ function ControllerLogicGame(){
 	var block = false;
 	var TIME_SLEEP_BETWEEN_INTERVAL = 1000;
 	var eventController = this;
-
+    
 	this.addEventListener =  function (eventName, callback){
 		eventController[eventName] = callback;
 	};
@@ -68,10 +68,13 @@ function ControllerLogicGame(){
 
 			if (firstSelected != null && secondSelected != null){
 				block = true;
+
 				var timer = setInterval(function(){
 					if (secondSelected.equals(firstSelected)){
 						firstSelected.block = true;
 						secondSelected.block = true;
+						
+						document.getElementById().value;
 						eventController["correct"](); 
 						
 					}else{
@@ -98,7 +101,7 @@ function CardGame (cards , controllerLogicGame,scoreBoard){
 	this.cards = cards;
 	var logicGame = controllerLogicGame;
 	var scoreBoardGameControl = scoreBoard;
-
+	
 	this.clear = function (){
 		var game = document.getElementById("game");
 		game.innerHTML = '';
@@ -127,6 +130,8 @@ function CardGame (cards , controllerLogicGame,scoreBoard){
 						logicGame.addEventListener("correct",function (){
 							scoreBoardGameControl.incrementScore();
 							scoreBoardGameControl.updateScore();
+                            
+							
 						});
 						logicGame.addEventListener("wrong",function (){
 							//scoreBoardGameControl.decrementScore();
@@ -149,6 +154,8 @@ function CardGame (cards , controllerLogicGame,scoreBoard){
 		}
 	}
 }
+
+
 
 function BuilderCardGame(){
 	var pictures = new Array ('alecrim.png','alecrim.png',
@@ -192,6 +199,9 @@ function BuilderCardGame(){
 		};
 		return cards;
 	}
+
+
+
 }
 
 function GameControl (){
