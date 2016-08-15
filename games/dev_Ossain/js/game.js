@@ -15,7 +15,8 @@ function ScoreBoardGameControl (){
 		corrects++;
 		score+= POINT_GAME;
 		if (corrects ==  TOTAL_CORRECT){
-			alert("Fim de Jogo! Seu Axe ficou: " + score);
+			alert("Fim de Jogo! Seu Axe ficou: " + score); 
+			window.location="final.html";
 		}
 	}
 
@@ -74,7 +75,7 @@ function ControllerLogicGame(){
 						firstSelected.block = true;
 						secondSelected.block = true;
 						
-						document.getElementById().value;
+						//document.getElementById().value;
 						eventController["correct"](); 
 						
 					}else{
