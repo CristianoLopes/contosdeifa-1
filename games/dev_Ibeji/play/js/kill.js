@@ -1042,9 +1042,7 @@ function continueGame(e) {
 				//alert("Continue Buttton!!");
 
 				 window.open('../final.html', '_parent');
-
- 
-				 window.open('../final.html', '_parent');
+ 				 window.open('../final.html', '_parent');
 
 
 
