@@ -35,7 +35,7 @@ $( document ).ready(function() {
   $("#dsp_toada").jPlayer({
       ready: function(event) {
           $(this).jPlayer("setMedia", {
-              mp3: "audio/toada_ode.mp3"
+              mp3: "audio/toada_ossain.mp3"
           });
       },
       ended: function() { // The $.jPlayer.event.ended event
