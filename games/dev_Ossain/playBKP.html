@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Encontre as folhas!!</title>
+	<script type="text/javascript" src="js/game.js"></script>
+  	<link  rel="stylesheet" href="css/game.css">
+
+  	 <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/fontello-contosifa/css/contosifa.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <!-- Preloader -->
+  <script src="js/jquery.queryloader2.js" type="text/javascript"></script>
+  <script src="js/vacuo.js" type="text/javascript"></script>
+
+</head>
+<body class="bg" onload="GameControl.createGame()">
+
+ <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-chevron-circle-left fa-6x"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <div class="btn-group-vertical">
+            <!--<a id="menu-close" href="#" class="btn btn-lg pull-right toggle"><i class="fa fa-times"></i></a>-->
+            <a id="menu-close" href="../index.html" class="btn btn-lg pull-right toggle" title="Inicio"><i class="iconcoco-iniciar"></i></a>
+            <a id="menu-close" href="play.html" class="btn btn-lg pull-right toggle" title="Jogar"><i class="iconbuzio"></i></a>
+            <a id="menu-close" href="final.html" class="btn btn-lg pull-right toggle" title="Final" ><i class="iconfechar-xango"></i></a>
+            <a id="menu-close" href="../../index.html" class="btn btn-lg pull-right toggle" title="Home"><i class="iconexu-ico"></i></a>
+           </div>
+        </ul>
+    </div>
+    <div id="control">
+	<input type="button"  class="button_game" value="Reiniciar" onclick="GameControl.createGame()"/> 	
+	</div>
+	<div  id="main" class="main">
+
+	
+	<div id="score"></div>
+	<div id="box"></div>
+	<div id="game"></div>
+
+</div>
+</body>
+</html>
