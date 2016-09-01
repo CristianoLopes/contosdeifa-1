@@ -81,34 +81,34 @@ function ControllerLogicGame(){
 						// alert(card.getPictureName());
 						var planta = card.getPictureName();
 						if (planta == 'aroeira.png') {
-								document.getElementById("desc").innerHTML = "Aroeira:  Boa pra curar ferimentos";
+								document.getElementById("desc").innerHTML = "Aroeira:  Indicada como antiinflamatório, cicatrizante e <br> para uso ginecológico</br>";
 						}
 						if (planta == 'alecrim.png') {
-								document.getElementById("desc1").innerHTML = "Alecrim:  Bom pra circulação";
+								document.getElementById("desc1").innerHTML = "Alecrim:  Muito utilizada como antibiótico natural e <br>antiinflamatório digestivo</br>";
 						}
 						if (planta == 'babosa.png') {
-								document.getElementById("desc2").innerHTML = "Babosa: Bom  pra cabelo";
+								document.getElementById("desc2").innerHTML = "Babosa: Usada como xampus e tratamento da pele";
 						}
 						if (planta == 'boldo.png') {
-								document.getElementById("desc3").innerHTML = "Boldo: Boa para dor no estomago";
+								document.getElementById("desc3").innerHTML = "Boldo: Muito boa para tratar problemas no estômago <br>e fígado</br>";
 						}
 						if (planta == 'camomila.png') {
-								document.getElementById("desc4").innerHTML = "Camomila: Boa para acalmar";
+								document.getElementById("desc4").innerHTML = "Camomila: É usada como calmante";
 						}
 						if (planta == 'ervadoce.png') {
-								document.getElementById("desc5").innerHTML = "Ervadoce: Boa para acalmar";
+								document.getElementById("desc5").innerHTML = "Ervadoce: Boa pra tratar febre";
 						}
 						if (planta == 'goiabeira.png') {
-								document.getElementById("desc6").innerHTML = "Goiabeira: O olho da goiabeira é boa pra desaranjo <br>intestinal</br>";
+								document.getElementById("desc6").innerHTML = "Goiabeira: O broto da goiabeira é usado para curar  <br> desarranjo intestinal</br>";
 						}
 						if (planta == 'manjericao.png') {
-								document.getElementById("desc7").innerHTML = "Manjericão: Para inflamação";
+								document.getElementById("desc7").innerHTML = "Manjericão: Indicado para quem sofre de insônia <br>e inquietação</br>";
 						}
 						if (planta == 'quebrapedra.png') {
-								document.getElementById("desc8").innerHTML = "Quebrapedra: Para banho";
+								document.getElementById("desc8").innerHTML = "Quebrapedra: Usado para tratar infecção renal e do <br>fígado</br>";
 						}
 						if (planta == 'romeira.png') {
-								document.getElementById("desc9").innerHTML = "Romeira: Usado para curar problemas de garganta com <br>o chá da casca</br>";
+								document.getElementById("desc9").innerHTML = "Romã: Muito usado para tratar problemas de garganta <br> com o chá da casca</br>";
 						}
 						// alert();
 						//document.getElementById().value;
