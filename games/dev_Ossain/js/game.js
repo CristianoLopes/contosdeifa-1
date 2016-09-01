@@ -2,7 +2,7 @@ function ScoreBoardGameControl (){
 	var score = 0;
 	var POINT_GAME = 10;
 	var TEXT_SCORE = "Axe: "
-
+	var find;
 	var TOTAL_CORRECT = 10;
 	var corrects = 0;
 
@@ -44,6 +44,9 @@ function Card(picture){
 	this.getQuestionImage =  function(){
 		return FOLDER_IMAGES+IMAGE_QUESTION;
 	}
+	this.getPictureName = function(){
+		return picture;
+	}
 }
 
 function ControllerLogicGame(){
@@ -52,6 +55,7 @@ function ControllerLogicGame(){
 	var block = false;
 	var TIME_SLEEP_BETWEEN_INTERVAL = 1000;
 	var eventController = this;
+	var cardsel;
     
 	this.addEventListener =  function (eventName, callback){
 		eventController[eventName] = callback;
@@ -74,9 +78,45 @@ function ControllerLogicGame(){
 					if (secondSelected.equals(firstSelected)){
 						firstSelected.block = true;
 						secondSelected.block = true;
-						
+						// alert(card.getPictureName());
+						var planta = card.getPictureName();
+						if (planta == 'aroeira.png') {
+								document.getElementById("desc").innerHTML = "Aroeira:  Boa pra curar ferimentos";
+						}
+						if (planta == 'alecrim.png') {
+								document.getElementById("desc1").innerHTML = "Alecrim:  Bom pra circulação";
+						}
+						if (planta == 'babosa.png') {
+								document.getElementById("desc2").innerHTML = "Babosa: Bom  pra cabelo";
+						}
+						if (planta == 'boldo.png') {
+								document.getElementById("desc3").innerHTML = "Boldo: Boa para dor no estomago";
+						}
+						if (planta == 'camomila.png') {
+								document.getElementById("desc4").innerHTML = "Camomila: Boa para acalmar";
+						}
+						if (planta == 'ervadoce.png') {
+								document.getElementById("desc5").innerHTML = "Ervadoce: Boa para acalmar";
+						}
+						if (planta == 'goiabeira.png') {
+								document.getElementById("desc6").innerHTML = "Goiabeira: O olho da goiabeira é boa pra desaranjo <br>intestinal</br>";
+						}
+						if (planta == 'manjericao.png') {
+								document.getElementById("desc7").innerHTML = "Manjericão: Para inflamação";
+						}
+						if (planta == 'quebrapedra.png') {
+								document.getElementById("desc8").innerHTML = "Quebrapedra: Para banho";
+						}
+						if (planta == 'romeira.png') {
+								document.getElementById("desc9").innerHTML = "Romeira: Usado para curar problemas de garganta com <br>o chá da casca</br>";
+						}
+						// alert();
 						//document.getElementById().value;
+						//document.getElementById("descrição").innerHTML = "Aroeira:  Boa pra feidas";
 						eventController["correct"](); 
+						
+						//document.write("nome da planta e");
+						
 						
 					}else{
 						firstSelected.visible  = false;
@@ -131,8 +171,6 @@ function CardGame (cards , controllerLogicGame,scoreBoard){
 						logicGame.addEventListener("correct",function (){
 							scoreBoardGameControl.incrementScore();
 							scoreBoardGameControl.updateScore();
-                            
-							
 						});
 						logicGame.addEventListener("wrong",function (){
 							//scoreBoardGameControl.decrementScore();
@@ -158,7 +196,7 @@ function CardGame (cards , controllerLogicGame,scoreBoard){
 
 
 
-function BuilderCardGame(){
+  function BuilderCardGame(){
 	var pictures = new Array ('alecrim.png','alecrim.png',
 		'aroeira.png','aroeira.png',
 		'babosa.png','babosa.png',
@@ -190,7 +228,6 @@ function BuilderCardGame(){
 			pictures[j] = tempi;
 		}
 	}
-
 	var buildCardGame =  function (){
 		var countCards = 0;
 		cards =  new Array();
@@ -201,8 +238,13 @@ function BuilderCardGame(){
 		return cards;
 	}
 
-
-
+	// var seleccard = function (){
+	 //		var cardsel = "";
+	 	//	if (pictures[1].length == pictures.length[1]){
+	 	//		card1 = pictures[1];
+	 	//	}	
+//	}	
+  //return alert(pictures);
 }
 
 function GameControl (){
@@ -213,4 +255,6 @@ GameControl.createGame = function(){
 	var builderCardGame =  new BuilderCardGame();
 	cardGame = builderCardGame.doCardGame();
 	cardGame.show();
+
+	
 }

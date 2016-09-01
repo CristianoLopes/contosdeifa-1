@@ -8,14 +8,92 @@
     width:660px;
     margin:0 auto;
 }
+/* Folhas */
+.aroeira{
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    font-family:'Atma', cursive;
+    font-size: 1.2em;
+    
+}
+.alecrim{
+    position: absolute;
+    top: 19%;
+    left: 2%;
+    font-family: 'Atma', cursive;
+    font-size: 1.2em;
+}
+
+.babosa{
+    position: absolute;
+    top: 26%;
+    left: 2%;
+    font-family: "Atma",cursive;
+    font-size: 1.2em;
+}
+
+.boldo{
+    position: absolute;
+    top: 33%;
+    left: 2%;
+    font-family: "Atma",cursive;
+    font-size: 1.2em;
+}
+
+.camomila{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    font-family: "Atma",cursive;
+    font-size: 1.2em;
+}
+.erva_doce{
+    position: absolute;
+    top: 47%;
+    left: 2%;
+    font-family: "Atma",cursive;
+    font-size: 1.2em;
+}
+.goiabeira{
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    font-family: "Atma",cursive;
+    font-size: 1.2em;
+}
+
+.manjericao{
+    position: absolute;
+    top: 64%;
+    left: 2%;
+    font-family: "Atma",cursive;
+    font-size: 1.2em;
+}
+.quebrapedra{
+    position: absolute;
+    top: 71%;
+    left: 2%;
+    font-family: "Atma",cursive;
+    font-size: 1.2em;
+}
+
+.romeira{
+    position: absolute;
+    top: 78%;
+    left: 2%;
+    font-family: "Atma",cursive;
+    font-size: 1.2em;
+}
 
 img {
 	margin : 10 0 0 10;
 }
 
 #score{
-	margin: 0 0 0 58%;
+	margin: -16px 0 0 58%;
     font-size: 30px;
+    font-family:'Atma', cursive;
 }
 
 
@@ -42,3 +120,4 @@ img {
     position: relative;
     top: 1px;
 }
+

@@ -384,6 +384,31 @@ body {
 	height: 100%;
 }
 
+
+.window{          /*Modal of plants description */
+    display:none;
+    width:300px;
+    height:300px;
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+ 
+#mascara{        /*Modal of plants description */
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+ 
+.fechar{display:block; text-align:right;}
+
 #fazendeiro {
 	background-image: url('../imgs/ibejis/b.png');
 	background-repeat: no-repeat;
@@ -1204,7 +1229,7 @@ border-color: #000;
 background-color: #6CB616;
 width: 31%;
 float: left;
-height: 63.5%;
+height: 75.5%;
 left: 1%;
 position: fixed;
 opacity: 0.65;
