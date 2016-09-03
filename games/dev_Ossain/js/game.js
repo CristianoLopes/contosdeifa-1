@@ -15,7 +15,7 @@ function ScoreBoardGameControl (){
 		corrects++;
 		score+= POINT_GAME;
 		if (corrects ==  TOTAL_CORRECT){
-			alert("Fim de Jogo! Seu Axe ficou: " + score); 
+			alert("Fim de Jogo! Seu Axe ficou: " + score + "%"); 
 			window.location="final.html";
 		}
 	}
@@ -81,34 +81,35 @@ function ControllerLogicGame(){
 						// alert(card.getPictureName());
 						var planta = card.getPictureName();
 						if (planta == 'aroeira.png') {
-								document.getElementById("desc").innerHTML = "Aroeira:  Indicada como antiinflamatório, cicatrizante e <br> para uso ginecológico</br>";
+								$(".aroeira_window, .bg_modal").fadeIn();
 						}
 						if (planta == 'alecrim.png') {
-								document.getElementById("desc1").innerHTML = "Alecrim:  Muito utilizada como antibiótico natural e <br>antiinflamatório digestivo</br>";
+								$(".alecrim_window, .bg_modal").fadeIn();
 						}
 						if (planta == 'babosa.png') {
-								document.getElementById("desc2").innerHTML = "Babosa: Usada como xampus e tratamento da pele";
+								$(".babosa_window, .bg_modal").fadeIn();
 						}
 						if (planta == 'boldo.png') {
-								document.getElementById("desc3").innerHTML = "Boldo: Muito boa para tratar problemas no estômago <br>e fígado</br>";
+								$(".boldo_window, .bg_modal").fadeIn();
 						}
 						if (planta == 'camomila.png') {
-								document.getElementById("desc4").innerHTML = "Camomila: É usada como calmante";
+								$(".camomila_window, .bg_modal").fadeIn();		
 						}
 						if (planta == 'ervadoce.png') {
-								document.getElementById("desc5").innerHTML = "Ervadoce: Boa pra tratar febre";
+								$(".ervadoce_window, .bg_modal").fadeIn();
 						}
 						if (planta == 'goiabeira.png') {
-								document.getElementById("desc6").innerHTML = "Goiabeira: O broto da goiabeira é usado para curar  <br> desarranjo intestinal</br>";
+								
+								$(".goiabeira_window, .bg_modal").fadeIn();
 						}
 						if (planta == 'manjericao.png') {
-								document.getElementById("desc7").innerHTML = "Manjericão: Indicado para quem sofre de insônia <br>e inquietação</br>";
+								$(".manjericao_window, .bg_modal").fadeIn();
 						}
 						if (planta == 'quebrapedra.png') {
-								document.getElementById("desc8").innerHTML = "Quebrapedra: Usado para tratar infecção renal e do <br>fígado</br>";
+								$(".quebrapedra_window, .bg_modal").fadeIn();
 						}
 						if (planta == 'romeira.png') {
-								document.getElementById("desc9").innerHTML = "Romã: Muito usado para tratar problemas de garganta <br> com o chá da casca</br>";
+								$(".roma_window, .bg_modal").fadeIn();
 						}
 						// alert();
 						//document.getElementById().value;
@@ -216,6 +217,78 @@ function CardGame (cards , controllerLogicGame,scoreBoard){
 		cardGame.clear();
 		return cardGame;
 	}
+	// modais load
+	$(document).ready(function(){  //begin
+	$(".goiabeira_window, .bg_modal").hide();
+	
+	 	$(".close_modal").click(function(){
+           $(".goiabeira_window, .bg_modal").hide();
+	     });
+	});  //end   
+	$(document).ready(function(){
+	$(".aroeira_window, .bg_modal").hide();
+	
+	 	$(".close_modal").click(function(){
+           $(".aroeira_window, .bg_modal").hide();
+	     });
+	});
+	$(document).ready(function(){
+	$(".alecrim_window, .bg_modal").hide();
+	
+	 	$(".close_modal").click(function(){
+           $(".alecrim_window, .bg_modal").hide();
+	     });
+	});
+	$(document).ready(function(){
+	$(".babosa_window, .bg_modal").hide();
+	
+	 	$(".close_modal").click(function(){
+           $(".babosa_window, .bg_modal").hide();
+	     });
+	});
+	$(document).ready(function(){
+	$(".boldo_window, .bg_modal").hide();
+	
+	 	$(".close_modal").click(function(){
+           $(".boldo_window, .bg_modal").hide();
+	     });
+	});
+	$(document).ready(function(){
+	$(".camomila_window, .bg_modal").hide();
+	
+	 	$(".close_modal").click(function(){
+           $(".camomila_window, .bg_modal").hide();
+	     });
+	});
+	$(document).ready(function(){
+	$(".ervadoce_window, .bg_modal").hide();
+	
+	 	$(".close_modal").click(function(){
+           $(".ervadoce_window, .bg_modal").hide();
+	     });
+	});
+	$(document).ready(function(){
+	$(".manjericao_window, .bg_modal").hide();
+	
+	 	$(".close_modal").click(function(){
+           $(".manjericao_window, .bg_modal").hide();
+	     });
+	});
+	$(document).ready(function(){
+	$(".quebrapedra_window, .bg_modal").hide();
+	
+	 	$(".close_modal").click(function(){
+           $(".quebrapedra_window, .bg_modal").hide();
+	     });
+	});
+	$(document).ready(function(){
+	$(".roma_window, .bg_modal").hide();
+	
+	 	$(".close_modal").click(function(){
+           $(".roma_window, .bg_modal").hide();
+	     });
+	});
+
 
 	var shufflePictures = function(){
 		var i = pictures.length, j, tempi, tempj;

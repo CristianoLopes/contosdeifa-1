@@ -61,7 +61,7 @@ $( document ).ready(function() {
   $(window).scroll(function(){
     if ($(window).scrollTop() == 0){
       $("#dsp_toada").jPlayer("stop");
-        $("#dsp_floresta").jPlayer("stop");
+       // $("#dsp_floresta").jPlayer("stop");
       }
     if ($(window).scrollTop() < 10){
         $("#intro_setas").fadeIn(300).fadeOut(300).fadeIn(300).fadeIn(400).fadeOut(500).fadeIn(300);
@@ -71,6 +71,7 @@ $( document ).ready(function() {
     }
     if ($(window).scrollTop() > 2000){
         $("#dsp_floresta").jPlayer("play");
+        $("#dsp_toada").jPlayer("play");
     }
 
   });

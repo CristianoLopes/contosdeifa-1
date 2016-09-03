@@ -19,7 +19,7 @@ html, body {
     z-index:9999; /* makes sure it stays on top */
 }
 
-/* tipos */
+
 @font-face {
     font-family: "Epistolar";
     src: url('../fonts/Epistolar/Epistolar.woff');
@@ -43,6 +43,7 @@ html, body {
     src: url('../fonts/no_color/No_Color.ttf');
     font-weight:400;
 }
+
 
 /* formatação */
 h1 {
@@ -1229,10 +1230,10 @@ border-color: #000;
 background-color: #6CB616;
 width: 31%;
 float: left;
-height: 75.5%;
+height: 92%;
 left: 1%;
 position: fixed;
-opacity: 0.65;
+opacity: 0.85%;
 }
 
 #ogum_social {

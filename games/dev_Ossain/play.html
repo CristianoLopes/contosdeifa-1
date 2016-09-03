@@ -2,7 +2,7 @@
 <head>
 	<title>Encontre as folhas!!</title>
 	<script type="text/javascript" src="js/game.js"></script>
-  	<link  rel="stylesheet" href="css/game.css">
+  	<link  rel="stylesheet" href="css/game.css" media="screen">
     <meta charset="utf-8">
 
   	 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -10,23 +10,20 @@
   <link href="css/fontello-contosifa/css/contosifa.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link href='https://fonts.googleapis.com/css?family=Atma:400,700,600,500' rel='stylesheet' type='text/css'>
+
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.js"></script>
+  <script src="js/jquery-3.1.0.js"></script>
   <script src="js/jquery-ui.js"></script>
   <!-- Preloader -->
+
   <script src="js/jquery.queryloader2.js" type="text/javascript"></script>
   <script src="js/vacuo.js" type="text/javascript"></script>
 
 </head>
+
 <body class="bg" onload="GameControl.createGame()">
-
-
- 
- 
-
-
-
-
  <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-chevron-circle-left fa-6x"></i></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -39,47 +36,65 @@
            </div>
         </ul>
     </div>
+
     <div id="control">
-	<input type="button"  class="button_game" value="Reiniciar" onclick="GameControl.createGame()"/> 	
-	</div>
+	   <input type="button"  class="button_game" value="Reiniciar" onclick="GameControl.createGame()"/> 	
+	  </div>
 	<div  id="main" class="main">
-
-	
-	<div id="score"></div>
-	<div id="box"></div>
-	<div id="game"></div>
-
-  <div id="desc" class="aroeira"> 
-   <!-- <p> Aroeira:  Boa pra curar ferimentos</p> -->
+  	<div id="score"></div>
+	  <div id="game"></div>
+     <div class="bg_modal">
+        <div class="aroeira_window" id="desc" href="play.html">
+           <h4 class="aroeira_title">Aroeira </h4>> 
+           <a class="close_modal" href="#"> Fechar </a> 
+           <p href="ajax.html" id="desc" class="aroeira_conteudo">Muito indicada como antiinflamatório, cicatrizante e para uso ginecológico</p>
+        </div>
+        <div class="alecrim_window" id="desc1" href="play.html">
+          <h4 class="alecrim_title">Alecrim </h4>> 
+          <a class="close_modal" href="#"> Fechar </a> 
+          <p href="ajax.html" id="desc6" class="alecrim_conteudo">Muito utilizada como antibiótico natural e antiinflamatório digestivo</p>
+        </div>
+        <div class="babosa_window" id="desc2" href="play.html">
+           <h4 class="babosa_title">Babosa </h4>> 
+           <a class="close_modal" href="#"> Fechar </a> 
+           <p href="ajax.html" id="desc" class="babosa_conteudo">Usada como xampus e tratamento da pele</p>
+        </div>
+        <div class="boldo_window" id="desc3" href="play.html">
+           <h4 class="boldo_title">Boldo </h4>> 
+           <a class="close_modal" href="#"> Fechar </a> 
+           <p href="ajax.html" id="desc" class="boldo_conteudo">Muito bom para tratar problemas no estômago e fígado</p>
+        </div>
+        <div class="camomila_window" id="desc4" href="play.html">
+           <h4 class="camomila_title">Camomila</h4>> 
+           <a class="close_modal" href="#"> Fechar </a> 
+           <p href="ajax.html" id="desc" class="camomila_conteudo">É usada como calmante</p>
+        </div>
+        <div class="ervadoce_window" id="desc4" href="play.html">
+           <h4 class="ervadoce_title">Ervadoce</h4>> 
+           <a class="close_modal" href="#"> Fechar </a> 
+           <p href="ajax.html" id="desc" class="ervadoce_conteudo">Boa pra tratar febre</p>
+        </div>
+  
+        <div class="goiabeira_window" id="desc6" href="play.html">
+            <h4 class="goiabeira_title">Goiabeira</h4>> 
+            <a class="close_modal" href="#"> Fechar </a> 
+            <p href="ajax.html" id="desc6" class="goiabeira_conteudo">O broto da goiabeira é usado para curar desarranjo intestinal</p>
+        </div>
+        <div class="manjericao_window" id="desc4" href="play.html">
+           <h4 class="manjericao_title">Manjericão </h4>> 
+           <a class="close_modal" href="#"> Fechar </a> 
+           <p href="ajax.html" id="desc" class="manjericao_conteudo">Indicado para quem sofre de insônia e inquietação</p>
+        </div>
+        <div class="quebrapedra_window" id="desc4" href="play.html">
+           <h4 class="quebrapedra_title">Quebrapedra</h4>> 
+           <a class="close_modal" href="#"> Fechar </a> 
+           <p href="ajax.html" id="desc" class="quebrapedra_conteudo">Usada para tratar infecção renal e do fígado</p>
+        </div>
+        <div class="roma_window" id="desc4" href="play.html">
+           <h4 class="roma_title">Romã</h4>> 
+           <a class="close_modal" href="#"> Fechar </a> 
+           <p href="ajax.html" id="desc" class="roma_conteudo">Muito usado para tratar problemas de garganta com o chá da casca</p>
+        </div>
   </div>
-  <div id="desc1" class="alecrim">
-   <!-- <p> Alecrim:  Bom pra circulação</p> -->
-
-  </div>
-  <div id="desc2" class="babosa">
-   <!-- <p> Babosa: Bom  pra cabelo </p> -->
-  </div> 
-  <div id="desc3" class="boldo">
-  <!--  <p> Boldo: Boa para dor no estomago </p>-->
-  </div>
-  <div id="desc4" class="camomila">
-    <!-- <p> Camomila: Boa para acalmar </p> -->
-  </div>
-  <div id="desc5" class="erva_doce">
-    <!-- <p> Ervadoce: Boa para acalmar </p> -->
-  </div>
-  <div id="desc6" class="goiabeira">
-   <!--  <p> Goiabeira: O olho da goiabeira é boa pra desaranjo <br>intestinal</br> </p> -->
-  </div>
-  <div id="desc7" class="manjericao">
-   <!-- <p> manjericão: Para inflamação</p> -->
-  </div>
-  <div id="desc8" class="quebrapedra">
-  <!--  <p> Quebrapedra: Para banho</p> -->
-  </div>
-  <div id="desc9" class="romeira">
-   <!--  <p> Romeira: Para banho</p> -->
-  </div>
-
 </body>
 </html>

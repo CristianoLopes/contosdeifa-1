@@ -8,95 +8,342 @@
     width:660px;
     margin:0 auto;
 }
-/* Folhas */
-.aroeira{
-    position: absolute;
-    top: 12%;
-    left: 2%;
-    font-family:'Atma', cursive;
-    font-size: 1.2em;
+/* Modais_Folhas */
+.close_modal{
+    display: block;
+    text-align: right;
+    cursor:pointer;
+    width: 19%;
+    float: right;
+   
+}
+
+.bg_modal{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color: RGBA(0, 0, 0, 0.71);;
+    z-index: 9999;
+    top:0;
+    left:0;
+}
+.aroeira_window{
+    width:300px;
+    height:162px;
+    position:absolute;
+    left:41%;
+    top:32%;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+.aroeira_title{
     
+    font-family: "Atma",cursive;
+    font-size: 1.4em;
+    line-height:1.2em;
+    color:#1DA43F;
+    height:22px;
+    position:absolute;
+    top: 6%;
+    margin-left: 36%;
 }
-.alecrim{
-    position: absolute;
-    top: 19%;
-    left: 2%;
-    font-family: 'Atma', cursive;
-    font-size: 1.2em;
+ 
+.aroeira_conteudo{
+    margin: 14% 0 10px;
+    color: #000;
+    font-size: 1.4em;
+    line-height:1.2em;
+    text-align:justify;
+    font-family: "Atma",cursive;
 }
 
-.babosa{
-    position: absolute;
-    top: 26%;
-    left: 2%;
-    font-family: "Atma",cursive;
-    font-size: 1.2em;
+.alecrim_window{
+    width:300px;
+    height:162px;
+    position:absolute;
+    left:41%;
+    top:32%;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
 }
+.alecrim_title{
+    
+    font-family: "Atma",cursive;
+    font-size: 1.4em;
+    line-height:1.2em;
+    color:#1DA43F;
+    height:22px;
+    position:absolute;
+    top: 6%;
+    margin-left: 36%;
+}
+.alecrim_conteudo{
+    margin: 14% 0 10px;
+    color: #000;
+    font-size: 1.4em;
+    line-height:1.2em;
+    text-align:justify;
+    font-family: "Atma",cursive;
+}
+.babosa_window{
+    width:300px;
+    height:162px;
+    position:absolute;
+    left:41%;
+    top:32%;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+.babosa_title{
+    font-family: "Atma",cursive;
+    font-size: 1.4em;
+    line-height:1.2em;
+    color:#1DA43F;
+    height:22px;
+    position:absolute;
+    top: 6%;
+    margin-left: 36%;
+}
+ 
+.babosa_conteudo{
+    margin: 14% 0 10px;
+    color: #000;
+    font-size: 1.4em;
+    line-height:1.2em;
+    text-align:justify;
+    font-family: "Atma",cursive;
 
-.boldo{
-    position: absolute;
-    top: 33%;
-    left: 2%;
-    font-family: "Atma",cursive;
-    font-size: 1.2em;
-}
 
-.camomila{
-    position: absolute;
-    top: 40%;
-    left: 2%;
-    font-family: "Atma",cursive;
-    font-size: 1.2em;
 }
-.erva_doce{
-    position: absolute;
-    top: 47%;
-    left: 2%;
-    font-family: "Atma",cursive;
-    font-size: 1.2em;
+.boldo_window{
+    width:300px;
+    height:162px;
+    position:absolute;
+    left:41%;
+    top:32%;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
 }
-.goiabeira{
-    position: absolute;
-    top: 55%;
-    left: 2%;
+.boldo_title{
+    
     font-family: "Atma",cursive;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    line-height:1.2em;
+    color:#1DA43F;
+    height:22px;
+    position:absolute;
+    top: 6%;
+    margin-left: 36%;
 }
-
-.manjericao{
-    position: absolute;
-    top: 64%;
-    left: 2%;
+.boldo_conteudo{
+    margin: 14% 0 10px;
+    color: #000;
+    font-size: 1.4em;
+    line-height:1.2em;
+    text-align:justify;
     font-family: "Atma",cursive;
-    font-size: 1.2em;
 }
-.quebrapedra{
-    position: absolute;
-    top: 71%;
-    left: 2%;
+.camomila_window{
+    width:300px;
+    height:162px;
+    position:absolute;
+    left:41%;
+    top:32%;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+.camomila_title{
+    
     font-family: "Atma",cursive;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    line-height:1.2em;
+    color:#1DA43F;
+    height:22px;
+    position:absolute;
+    top: 6%;
+    margin-left: 36%;
 }
-
-.romeira{
-    position: absolute;
-    top: 78%;
-    left: 2%;
+.camomila_conteudo{
+    margin: 14% 0 10px;
+    color: #000;
+    font-size: 1.4em;
+    line-height:1.2em;
+    text-align:justify;
     font-family: "Atma",cursive;
-    font-size: 1.2em;
 }
-
+.ervadoce_window{
+    width:300px;
+    height:162px;
+    position:absolute;
+    left:41%;
+    top:32%;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+.ervadoce_title{
+    
+    font-family: "Atma",cursive;
+    font-size: 1.4em;
+    line-height:1.2em;
+    color:#1DA43F;
+    height:22px;
+    position:absolute;
+    top: 6%;
+    margin-left: 36%;
+}
+.ervadoce_conteudo{
+    margin: 14% 0 10px;
+    color: #000;
+    font-size: 1.4em;
+    line-height:1.2em;
+    text-align:justify;
+    font-family: "Atma",cursive;
+}
+.goiabeira_window{
+    width:300px;
+    height:162px;
+    position:absolute;
+    left:41%;
+    top:32%;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+.goiabeira_title{
+    
+    font-family: "Atma",cursive;
+    font-size: 1.4em;
+    line-height:1.2em;
+    color:#1DA43F;
+    height:22px;
+    position:absolute;
+    top: 6%;
+    margin-left: 36%;
+}
+ 
+.goiabeira_conteudo{
+    margin: 14% 0 10px;
+    color: #000;
+    font-size: 1.4em;
+    line-height:1.2em;
+    text-align:justify;
+    font-family: "Atma",cursive;
+}
+.manjericao_window{
+    width:300px;
+    height:162px;
+    position:absolute;
+    left:41%;
+    top:32%;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+.manjericao_title{
+    
+    font-family: "Atma",cursive;
+    font-size: 1.4em;
+    line-height:1.2em;
+    color:#1DA43F;
+    height:22px;
+    position:absolute;
+    top: 6%;
+    margin-left: 36%;
+}
+.manjericao_conteudo{
+    margin: 14% 0 10px;
+    color: #000;
+    font-size: 1.4em;
+    line-height:1.2em;
+    text-align:justify;
+    font-family: "Atma",cursive;
+}
+.quebrapedra_window{
+    width:300px;
+    height:162px;
+    position:absolute;
+    left:41%;
+    top:32%;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+.quebrapedra_title{
+    
+    font-family: "Atma",cursive;
+    font-size: 1.4em;
+    line-height:1.2em;
+    color:#1DA43F;
+    height:22px;
+    position:absolute;
+    top: 6%;
+    margin-left: 36%;
+}
+.quebrapedra_conteudo{
+    margin: 14% 0 10px;
+    color: #000;
+    font-size: 1.4em;
+    line-height:1.2em;
+    text-align:justify;
+    font-family: "Atma",cursive;
+}
+.roma_window{
+    width:300px;
+    height:162px;
+    position:absolute;
+    left:41%;
+    top:32%;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+}
+.roma_title{
+    
+    font-family: "Atma",cursive;
+    font-size: 1.4em;
+    line-height:1.2em;
+    color:#1DA43F;
+    height:22px;
+    position:absolute;
+    top: 6%;
+    margin-left: 36%;
+}
+.roma_conteudo{
+    margin: 14% 0 10px;
+    color: #000;
+    font-size: 1.4em;
+    line-height:1.2em;
+    text-align:justify;
+    font-family: "Atma",cursive;
+}
 img {
 	margin : 10 0 0 10;
 }
 
 #score{
-	margin: -16px 0 0 58%;
-    font-size: 30px;
-    font-family:'Atma', cursive;
+	margin: 0% 1% 1% 0%;
+    font-size: 2.8em;
+    font-family: 'Atma', cursive;
+    position: absolute;
+    left: 23%;
+    top: 13%;
 }
-
-
 .button_game {
     background: -moz-linear-gradient(center top , #EDEDED 5%, #DFDFDF 100%) repeat scroll 0 0 #EDEDED;
     border: 1px solid #DCDCDC;
@@ -110,7 +357,7 @@ img {
     padding: 6px 23px;
     text-decoration: none;
     text-shadow: 1px 1px 0 #FFFFFF;
-    margin-left: 12%;
+    margin-left: 23%;
     margin-top: 26px;
 }
 .button_game:hover {
